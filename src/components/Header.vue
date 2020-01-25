@@ -1,12 +1,16 @@
 <template>
   <header class="header">
     <h1>TodoList</h1>
+    <div id="nav">
+      <router-link exact to="/">Home</router-link>|
+      <router-link exact to="/about">About</router-link>
+    </div>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: "Header"
 };
 </script>
 
@@ -21,5 +25,6 @@ export default {
 .header a {
   color: #fff;
   padding-right: 5px;
+  text-decoration: none;
 }
 </style>
